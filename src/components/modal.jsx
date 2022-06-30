@@ -2,6 +2,7 @@ import React from 'react';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import Modal from "./modal";
+import { Link } from 'react-router-dom';
 
 export default (props) => (
   <Popup
@@ -30,7 +31,7 @@ export default (props) => (
         <div className="actions">
           <div>
             {props.nextModalTitle === "Tarefas priorizadas" ? (
-              <a href='PriozedTasks'>
+              <a href='/priorizedtasks'>
                 <button onClick={() => {
                   console.log('1');
                 }}>
