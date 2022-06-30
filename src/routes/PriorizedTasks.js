@@ -1,5 +1,7 @@
 import React from 'react'
 
+import './index.css';
+
 export default function PriorizedTasks() {
   return (
     <div className="App">
@@ -10,16 +12,16 @@ export default function PriorizedTasks() {
         <table>
           <thead>Resultados Obtidos
           <tbody>
-            <tr>DNA
+            <tr>DNA:
               <td>MOCK1</td>
             </tr>
-            <tr>Fitness
+            <tr>Fitness:
               <td>MOCK1</td>
             </tr>
-            <tr>Generation
+            <tr>Generation:
               <td>MOCK1</td>
             </tr>
-            <tr>Found-in
+            <tr>Found-in:
               <td>MOCK1</td>
             </tr>
           </tbody>

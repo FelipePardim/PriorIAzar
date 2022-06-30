@@ -41,7 +41,7 @@ export default (props) => (
             ) : (
               <Modal
                 title={props.nextModalTitle}
-                description={props.nextModalTitle}
+                description={props.nextModalDescription}
                 placeholder={props.nextModalPlaceholder}
                 buttonName={"Próximo"}
                 nextModalTitle={"Tarefas priorizadas"}

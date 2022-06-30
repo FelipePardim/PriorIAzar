@@ -8,9 +8,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <p>
+        <h2>
           Priorize as tarefas de desenvolvimento e manutenção do seu time.
-        </p>
+        </h2>
         <form>
           Faça o upload do seu arquivo<br />
           <input
@@ -19,19 +19,18 @@ function App() {
             // onChange={(e) => setSelectedFile(e.target.files[0])}
           />
           <br />
-
           <button>
             Upload das tarefas
           </button>
         </form>
         <Modal
           title={"Tamanho do time"}
-          description={"Qual é o tamanho do seu time"}
+          description={"Qual é o tamanho do seu time?"}
           placeholder={"Ex: 12"}
           buttonName={"Próximo"}
           nextModalButtonName={"Próximo"}
           nextModalTitle={"Horas para a execução"}
-          nextModalDescription={"Quantas horas serão disponibilizadas para o desenvolvimento"}
+          nextModalDescription={"Quantas horas serão disponibilizadas para o desenvolvimento?"}
           nextModalPlaceholder={"Ex: 5"}
         />
       </header>

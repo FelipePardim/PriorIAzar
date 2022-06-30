@@ -1,0 +1,12 @@
+{
+ "response": {
+  "Dna": [
+   "2",
+   "2",
+   "2"
+  ],
+  "Fitness": 885,
+  "Generation": 1500,
+  "Found_in": "849ms"
+ }
+}
