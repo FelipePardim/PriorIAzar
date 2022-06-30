@@ -1,20 +1,23 @@
-import axios from 'axios';
+
 import React, { useEffect, useState } from 'react'
+import api from '../service/api';
 
 import './index.css';
-
-const baseURL = "https://localhost:3500";
 
 export default function PriorizedTasks() {
 
   const [DNA, setDNA] = useState('');
 
   useEffect(() => {
-    axios.get(baseURL).then((response) => {
-      setDNA(response.data);
-      console.log(DNA);
-    });
+    api
+      .get("/")
+      .then((response) => {
+        setDNA(response.data)})
+      .catch((err) => {
+        console.error("ops! ocorreu um erro" + err);
+      });
   }, []);
+
   return (
     <div className="App">
       <header className="App-header">
@@ -25,17 +28,16 @@ export default function PriorizedTasks() {
           <thead>Resultados Obtidos
           <tbody>
             <tr>DNA:
-              <td>MOCK1</td>
-              <td>{DNA}</td>
+              <td>{DNA.Dna}</td>
             </tr>
             <tr>Fitness:
-              <td>MOCK1</td>
+              <td>{DNA.Fitness}</td>
             </tr>
             <tr>Generation:
-              <td>MOCK1</td>
+              <td>{DNA.Generation}</td>
             </tr>
             <tr>Found-in:
-              <td>MOCK1</td>
+              <td>{DNA.Found_in}</td>
             </tr>
           </tbody>
           </thead>
